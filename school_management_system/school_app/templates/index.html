@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img
+                    src="https://th.bing.com/th/id/OIP.k7lGkH45BndMJqnokIl93AHaDt?w=326&h=180&c=7&r=0&o=5&pid=1.7"
+                    alt="" style="width: 120px;height: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learning Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Body -->
+        <div class="content container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{% url 'student_login' %}">Student Login</a></h5>
+                            <!-- Add your student login form here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{% url 'staff_login' %}">Staff Login</a></h5>
+                            <!-- Add your staff login form here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{% url 'admin_login' %}">Admin Login</a></h5>
+                            <!-- Add your admin login form here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container text-center">
+            <p>&copy; 2023 Your Website. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">About Us</a></li>
+                <li class="list-inline-item"><a href="#">Blog</a></li>
+                <li class="list-inline-item"><a href="#">Careers</a></li>
+                <li class="list-inline-item"><a href="#">Learning Programs</a></li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                <li class="list-inline-item"><a href="#"><img src="youtube-icon.png" alt="YouTube"></a></li>
+                <li class="list-inline-item"><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+                <li class="list-inline-item"><a href="#"><img src="github-icon.png" alt="GitHub"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JS and your custom JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
